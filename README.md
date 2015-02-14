@@ -14,9 +14,8 @@ This implementation is borrowed from the REST module in CAS which will be availa
 `1.0.0-RC1`
 
 ### Supported CAS version
-The minimum supported CAS server version is `3.5.1`
+The minimum supported CAS server version is `3.5.1+`
 
 ## Usage
 
 TODO...
-
