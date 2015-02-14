@@ -1,4 +1,4 @@
-apply plugin: 'war'
+apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'signing'
 apply from: 'http://tellurianring.com/projects/gradle-plugins/gradle-release/apply.groovy'
@@ -34,7 +34,7 @@ dependencies {
     provided "org.springframework:spring-web:$springVersion"
     provided "org.springframework:spring-webmvc:$springVersion"
 
-    providedCompile "javax.servlet:servlet-api:2.5"
+    provided "javax.servlet:servlet-api:2.5"
 
     testCompile "org.springframework:spring-test:$springVersion"
     testCompile "junit:junit:$junitVersion"
