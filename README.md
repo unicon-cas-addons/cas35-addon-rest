@@ -6,7 +6,7 @@ Professional Support / Integration Assistance for this module is available. For 
 
 ## Motivation
 
-Current Restlet-based REST module for CAS 3.5.x series has completely broken some overlay builds with runtime dependencies conflicts hell in Restlet and other Spring modules like `cglib`, and `asm`. Rather then "fight" these to squeeze this heavyweight Restlet library into existing overlays, there is a better, lighter-weight implementetion based on SpringMVC `@Controller` programming model, which supports an semi-auto configuration (no need to define any Spring beans, just include the jar on the apps's classpath).
+Current Restlet-based REST module for CAS 3.5.x series has completely broken some overlay builds with runtime dependencies conflicts hell in Restlet and other Spring modules like `cglib`, and `asm`. Rather then "fight" these to squeeze this heavyweight Restlet library into existing overlays, there is a better, lighter-weight implementetion based on SpringMVC `@Controller` programming model, which supports a semi-auto configuration (no need to define any Spring beans, just include the jar on the apps's classpath).
 
 This is the implementation borrow from the REST module in CAS which will be available in CAS `4.1`. By having a seprate micro addon with the same code, CAS `3.5` based deploymnent could enjoy the same enhaced REST implementation that CAS `4.1` builds would enjoy.
 
