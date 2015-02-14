@@ -1,0 +1,6 @@
+CAS35 Addon REST Changelog
+==========================
+
+Changes in version 1.0.0-GA
+----------------------------------------
+* Initial release
