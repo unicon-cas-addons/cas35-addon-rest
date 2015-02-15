@@ -36,10 +36,9 @@ dependencies {
 
     provided "javax.servlet:javax.servlet-api:3.1.0"
 
-    //Depending explicitly on Spring 4 test module here for MockMvc support
-    testCompile "org.springframework:spring-test:4.+"
+    testCompile "org.springframework:spring-test:$springVersion"
     testCompile "junit:junit:$junitVersion"
-    testCompile "org.mockito:mockito-core:1.+"
+    testCompile "org.mockito:mockito-core:$mockitoVersion"
     testRuntime "javax.servlet:javax.servlet-api:3.1.0"
 }
 
