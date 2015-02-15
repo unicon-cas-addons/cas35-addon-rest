@@ -11,7 +11,7 @@ Current Restlet-based REST module for CAS 3.5.x series has completely broken som
 This implementation is borrowed from the REST module in CAS which will be available in CAS `4.1`. By having a seprate micro addon with the same code, CAS `3.5` based deploymnent could enjoy the same enhaced REST implementation that CAS `4.1` builds would enjoy.
 
 ### Current version
-`1.0.0-RC1`
+`1.0.0-RC3`
 
 ### Supported CAS version
 The minimum supported CAS server version is `3.5.1+`
