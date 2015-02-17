@@ -31,7 +31,7 @@ The minimum supported CAS server version is `3.5.1+`
   </dependency>
   ```
 
-  > Gradle
+  > Gradle:
   
   ```Groovy
   dependencies {
