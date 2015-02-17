@@ -18,4 +18,52 @@ The minimum supported CAS server version is `3.5.1+`
 
 ## Usage
 
-TODO...
+* Define a dependency in your CAS war overlay:
+
+  > Maven:
+  
+  ```xml
+  <dependency>
+      <groupId>net.unicon.cas</groupId>
+      <artifactId>cas35-addon-rest</artifactId>
+      <version>1.0.0-RC3</version>
+      <scope>runtime</scope>
+  </dependency>
+  ```
+
+  > Gradle
+  
+  ```Groovy
+  dependencies {
+        ...
+        runtime 'net.unicon.cas:cas35-addon-rest:1.0.0-RC3'
+        ...
+  }
+  ```
+  
+* Add `classpath*:/META-INF/spring/*.xml` entry to `contextConfigLocation`
+
+  > in `WEB-INF/web.xml`
+  
+  ```xml
+  <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            /WEB-INF/spring-configuration/*.xml
+            /WEB-INF/deployerConfigContext.xml
+            classpath*:/META-INF/spring/*.xml
+        </param-value>
+  </context-param>
+  ```
+* Add `/v1/*` servlet mapping to `cas` servlet
+
+  > in `WEB-INF/web.xml`
+  
+  ```xml
+  <servlet-mapping>
+      <servlet-name>cas</servlet-name>
+      <url-pattern>/v1/*</url-pattern>
+  </servlet-mapping>
+  ```
+
+  
